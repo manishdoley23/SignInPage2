@@ -1,0 +1,11 @@
+{% autoescape off %}
+
+Welcome to the HOUSE OF DARCS!
+
+Hello {{ name }}!
+
+Do the deed of confirming your email by clicking on the following link ma man.
+
+Confirmation link: http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+
+{% endautoescape %}
